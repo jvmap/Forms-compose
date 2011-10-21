@@ -1,0 +1,27 @@
+Name:                Forms-compose
+Version:             0.0.0
+License:             BSD3
+License-file:        LICENSE
+Author:              Jeroen Vrijkorte
+Maintainer:          h.j.vrijkorte@gmail.com
+Build-type:          Simple
+Cabal-version:       >=1.2
+Category:            User Interfaces
+
+-- Extra files to be distributed with the package, such as examples or
+-- a README.
+-- Extra-source-files:  
+
+Library
+  -- Modules exported by the library.
+  Exposed-modules:     Graphics.UI.FormsCompose
+  
+  Build-depends: base < 5, pango >= 0.12.0 && < 0.13, transformers >= 0.2.2 && < 0.3,
+                 reactive-banana >= 0.4.1 && < 0.5, gtk >= 0.12.0 && < 0.13
+  
+  hs-source-dirs:  src
+  
+  -- Other-modules:       
+  
+  -- Build-tools:         
+  
